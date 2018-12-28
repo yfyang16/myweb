@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <link href="../static/css/pj.css" rel="stylesheet" type="text/css"/>
+    <!--<link href="../static/css/tobedone.css" rel="stylesheet" type="text/css"/>-->
+{% endblock %}
+{% block nav %}
+    <div class="navbar navbar-default nvb" role="navigation">
+        <div class="container-fluid">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a>&nbsp;&nbsp;</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cv">Resume</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li class="active"><a href="/code">Project</a></li>
+                <li><a>&nbsp;&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+<div class="pjlist">
+
+    <div class="web">
+        <h2>Blog Web Site</h2>
+        <h3> Designed a complete web application which was a blog with markdown editor and user login </h3>
+        <ul>
+            <li> Utilized Java-servelet (in Tomcat) to construct the back-end of this application </li>
+            <li> Designed the front-end which contained the technique of html5, css(bootstrap), javascript(AJAX) by JAVA Server
+Page(JSP) and tested it in docker. </li>
+            <li><a href="https://www.github.com/yyf710670079/blog_website_java">Source Code</a></li>
+        </ul>
+        <div class="webpic">
+        <img src="../static/hello.png" width=560 height=400><img src="../static/edit.png" width=560 height=400><br>
+            <img src="../static/list.png" width=560 height=400><img src="../static/preview.png" width=560 height=400>
+        </div>
+
+    </div>
+
+    <br>
+    <hr/>
+
+    <div class="spweb">
+        <h2>Single Page Web Site</h2>
+        <h3> Rebuild blog website (Single Page)</h3>
+
+        <ul>
+            <li>Utilized Node.js framework Express to build the model layer.</li>
+            <li>Designed the front-end components and services using the Angular framework.</li>
+            <li>Applied MongoDB database, developed and tested the whole application in docker.</li>
+            <li>Constructed the login website sending Json Web Token(JWT) as a cookie.</li>
+            <li> Using locust to test the server, 450 users 285.5 read requests per second and 98% responded in 180 ms,
+                100 users 66.9 write requests per second and 98% responded in 77ms. </li>
+            <li><a href="https://www.github.com/yyf710670079/blog_website_java">Source Code</a></li>
+        </ul>
+
+
+    </div>
+
+
+
+</div>
+
+
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+{% endblock %}

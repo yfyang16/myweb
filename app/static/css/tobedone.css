@@ -1,0 +1,15 @@
+.sorry {
+    width: 25%;
+    height: 50%;
+    position: fixed;
+    top: 200px;
+    left: 25%;
+
+
+}
+
+.sorry p{
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="../static/css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--<link rel="stylesheet" href="../static/css/style.min.css">-->
+    <!--<link rel="stylesheet" href="../static/css/fontello.min.css">-->
+    <!--<link rel="stylesheet" href="../static/css/zoom.css">-->
+    <script content="text/javascript">
+        function Change(event) {
+
+            if(document.getElementById("gpa").innerHTML == "GPA: 3.78/4.00 (Core GPA:3.87) Rank 1/45") {
+                document.getElementById("gpa").innerHTML = "";
+            } else {
+                document.getElementById("gpa").innerHTML = "GPA: 3.78/4.00 (Core GPA:3.87) Rank 1/45";
+            }
+
+        }
+        <!--document.getElementById("#btn_gpa").addEventListener(‘click’, Change);-->
+    </script>
+</head>
+<body style="padding-top: 50px">
+
+
+
+    <div class="navbar navbar-default nvb" role="navigation">
+        <div class="container-fluid">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a>&nbsp;&nbsp;</a></li>
+                <li class="active"><a>Home</a></li>
+                <li><a href="/cv">Resume</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/code">Project</a></li>
+                <li><a>&nbsp;&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--<div style="width: 85%;margin:auto">-->
+        <!--<h1>Welcome!</h1>-->
+        <!--<p><a href="cv" class="linktocv"> Curriculum Vitae of Yufeng Yang </a></p>-->
+    <!--</div>-->
+
+    <div class="container">
+        <div class="sidebar">
+
+            <div class="title">
+                <br>
+                <img src="../static/myPhoto.jpeg" style="border-radius:40%;">
+                <h1>Yufeng Yang<br>(杨宇锋)</h1>
+            </div>
+            <ul class="side-info">
+                <li class="someRight">
+                    <dt><i class="fa fa-bookmark"></i> Contact: <br> &nbsp;&nbsp;&nbsp;&nbsp;+8615921172395</dt><br>
+                    <dt><i class="fa fa-envelope"></i> email: <a href="mailto:yangyufeng@g.ucla.edu" target="_blank">yangyufeng@g.ucla.edu</a>
+                        <a href="mailto:16300290001@fudan.edu.cn" target="_blank">16300290001@fudan.edu.cn</a></dt>
+                </li>
+            </ul>
+
+            <div class="note">
+                <p>Love boba tea!</p>
+                <p>写代码顺便学力学</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="rightbar">
+        <ul class="main-info">
+                <li class="Right" id="per">
+                    <dt><i class="fa fa-bookmark"></i> Personal Info</dt>
+                    <hr/>
+                    <dd><strong>Name:</strong> <span> Yufeng Yang (杨宇锋)</span></dd>
+                    <dd><strong>Major:</strong> <span> Mechanics</span></dd>
+                    <dd><strong>Minor:</strong> <span> Data Science</span></dd>
+                    <dd><strong>GitHub:</strong> <a href="https://www.github.com/yyf710670079" target="_blank"> www.github.com/yyf710670079</a></dd>
+                </li>
+
+                <li class="Right" id="edu">
+                    <dt><i class="fa fa-bookmark"></i> Education</dt>
+                    <hr/>
+                    <dd><strong>Fudan University</strong></dd>
+                    <dd>Major in Mechanics<span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016.09 - &nbsp;</span></dd>
+                    <dd>Minor in Data Science<span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017.09 - &nbsp;</span></dd>
+
+                    <button class="btn  btn-danger btn-sm" type="button" id="btn_gpa" onclick="Change()">Click for GPA and Rank</button>
+                    <p id="gpa"></p>
+                    <br>
+                    <dd><strong>UCLA(University of California, Los Angeles)</strong></dd>
+                    <dd>Exchange Student<span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2018.09 - 2018.12</span></dd>
+                </li>
+
+                <li class="Right" id="ski">
+                    <dt><i class="fa fa-bookmark"></i> Skills</dt>
+                    <hr/>
+                    <ul>
+                        <li class="Right"><strong>Programming Languages:</strong> </li>
+                        <p>Python, C/C++, JAVA, Javascript, MATLAB, R, HTML </p>
+                        <br>
+                        <li class="Right"><strong>Platforms & Tools: </strong></li>
+                        <p>Linux, Python/Flask ,Mysql/Mongodb, Pytorch/Keras, CSS/Bootstrap, Node.js/Express/Angular, LATEX</p>
+                    </ul>
+                </li>
+        </ul>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

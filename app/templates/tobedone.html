@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <link href="../static/css/tobedone.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block nav %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+    <div class="sorry">
+        <p>
+        Sorry, this page will be done soon!
+        :)
+        </p>
+    </div>
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+{% endblock %}

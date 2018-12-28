@@ -1,0 +1,15 @@
+
+
+.webpic img{
+    float:left;
+    margin:10px;
+}
+
+br {
+    clear:both;
+}
+
+.pjlist {
+    margin-top:50px;
+    margin-left:50px;
+}
