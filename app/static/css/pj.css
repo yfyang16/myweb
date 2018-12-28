@@ -1,8 +1,8 @@
-
+html{font-size:10px}
 
 .webpic img{
     float:left;
-    margin:10px;
+    margin:1rem;
 }
 
 br {
@@ -10,6 +10,6 @@ br {
 }
 
 .pjlist {
-    margin-top:50px;
-    margin-left:50px;
+    margin-top:5rem;
+    margin-left:5rem;
 }

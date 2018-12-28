@@ -1,15 +1,17 @@
+html{font-size:10px}
 .sorry {
     width: 25%;
     height: 50%;
     position: fixed;
-    top: 200px;
+    top: 20rem;
     left: 25%;
 
 
 }
 
+
 .sorry p{
-    font-size: 30px;
+    font-size: 3rem;
     color: blue;
     text-align: center;
 }
