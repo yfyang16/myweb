@@ -13,3 +13,17 @@ br {
     margin-top:5rem;
     margin-left:5rem;
 }
+
+
+
+code {
+   font: 17px Monaco;
+   line-height:23px;
+}
+pre {
+   width: 80%;
+   background: #333;
+   color: white;
+   padding: 20px;
+   margin: 0 0 20px 0; /* Probably the same as paragraphs */
+}

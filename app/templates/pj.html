@@ -20,10 +20,24 @@
 {% endblock %}
 {% block content %}
 <div class="pjlist">
+    <div class="myweb">
+        <h2>This Web Site</h2>
+        <h4> My Personal Home Page </h4>
+        <ul>
+            <li> Utilized Python/Flask Framework </li>
+            <li> Using Jinja2 Engine to construct the templates in the front-end and css/bootstrap for layout and appearance. </li>
+            <li> Applied Mysql Database as the storage of my blogs.</li>
+            <li> Placed the project on the tencent ecs and using uwsgi+nginx web server</li>
+            <li><a href="https://www.github.com/yyf710670079/myweb">Source Code</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <hr/>
 
     <div class="web">
         <h2>Blog Web Site</h2>
-        <h3> Designed a complete web application which was a blog with markdown editor and user login </h3>
+        <h4> Designed a complete web application which was a blog with markdown editor and user login </h4>
         <ul>
             <li> Utilized Java-servelet (in Tomcat) to construct the back-end of this application </li>
             <li> Designed the front-end which contained the technique of html5, css(bootstrap), javascript(AJAX) by JAVA Server
@@ -42,7 +56,7 @@ Page(JSP) and tested it in docker. </li>
 
     <div class="spweb">
         <h2>Single Page Web Site</h2>
-        <h3> Rebuild blog website (Single Page)</h3>
+        <h4> Rebuild blog website (Single Page)</h4>
 
         <ul>
             <li>Utilized Node.js framework Express to build the model layer.</li>
@@ -56,6 +70,42 @@ Page(JSP) and tested it in docker. </li>
 
 
     </div>
+
+    <br>
+    <hr/>
+
+    <div class="simplespark">
+        <h2>Using spark (demo)</h2>
+        <h4> Identified the most “popular” users on the Twitter network, measured by the number of their followers.</h4>
+        <p>dataset: <a href="../static/twitter.edges">twitter.edges</a></p>
+        <pre><code content="text/scala" class="sparkcode">
+    // topUser.scala
+    val file = "twitter.edges"
+    val lines = sc.textFile(file)
+    val splitRdd = lines.map(line => line.split(": "))
+    val yourRdd = splitRdd.flatMap( arr => {
+      val follower = arr( 0 )
+      val manySubject = arr( 1 )
+      val subjects = manySubject.split(",")
+      subjects.map( subject => ( subject, 1 ) )
+    } )
+    val Counts = yourRdd.reduceByKey((a,b) => a+b)
+    val finalCount = Counts.filter({case (key,value) => value > 1000})
+
+    finalCount.saveAsTextFile("output")
+    System.exit(0)
+
+        </code></pre>
+        <h4>command to execute the program</h4>
+        <pre><code content="text/shell">
+    $ spark-shell -i wordCount.scala // run
+    // the output directory will be generated in the working directory
+        </code></pre>
+
+    </div>
+
+    <br>
+    <hr/>
 
 
 
